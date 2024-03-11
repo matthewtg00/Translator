@@ -1,3 +1,3 @@
-Translator IOS App<br>
+__Translator IOS App__<br>
 Speech to text: OpenAI Whisper<br>
 Translation: OpenAI ChatGPT

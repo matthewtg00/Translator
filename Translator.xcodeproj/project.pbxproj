@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BEB31682F4A92D6008F48BF /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 0BEB31672F4A92D6008F48BF /* OpenAI */; };
 		4C78AA752B9958520050EC70 /* TranslatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C78AA742B9958520050EC70 /* TranslatorApp.swift */; };
 		4C78AA772B9958520050EC70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C78AA762B9958520050EC70 /* ContentView.swift */; };
 		4C78AA792B9958530050EC70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C78AA782B9958530050EC70 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BEB31682F4A92D6008F48BF /* OpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +217,9 @@
 				Base,
 			);
 			mainGroup = 4C78AA682B9958520050EC70;
+			packageReferences = (
+				0BEB31662F4A92D6008F48BF /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
 			productRefGroup = 4C78AA722B9958520050EC70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -422,8 +427,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Translator/Preview Content\"";
+				DEVELOPMENT_TEAM = XL5P67HY42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access to transcribe your speech into text.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -450,8 +457,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Translator/Preview Content\"";
+				DEVELOPMENT_TEAM = XL5P67HY42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access to transcribe your speech into text.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -582,6 +591,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0BEB31662F4A92D6008F48BF /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0BEB31672F4A92D6008F48BF /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BEB31662F4A92D6008F48BF /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4C78AA692B9958520050EC70 /* Project object */;
 }
